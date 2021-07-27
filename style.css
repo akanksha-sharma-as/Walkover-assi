@@ -1,0 +1,576 @@
+@import url("https://fonts.googleapis.com/css2?family=Copse&family=Playball&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.front {
+  width: 98vw;
+  height: 100vh;
+  /* background-color: blue; */
+  /* border: 2px solid blue; */
+}
+
+.header {
+  height: 10vh;
+  width: 91vw;
+  padding: 1vh 6vw 1vh 2vw;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* background-color: red; */
+  /* border: 2px solid red; */
+}
+
+.front::after {
+  content: "";
+  background: url(./img/pic.jpg);
+  background-size: cover;
+  height: 100vh;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  /* border: 2px solid green; */
+}
+
+.header_img {
+  height: 80%;
+  /* border: 2px solid black; */
+}
+
+button {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.header_menu {
+  justify-self: end;
+  align-self: center;
+  background: none;
+  padding: 3%;
+  /* border: 2px solid black; */
+}
+
+.navbar {
+  background-color: black;
+  right: calc(0vw + 2%);
+  top: 7vh;
+  width: 10%;
+  border-radius: 10%;
+  position: absolute;
+  list-style-type: none;
+  color: white;
+  padding: 2vh 0px;
+  display: none;
+  /* border: 2px solid red; */
+}
+
+.header_menu:hover .navbar {
+  display: block;
+}
+
+.navbar_items {
+  width: 20%;
+  margin: auto;
+  line-height: calc(10px + 2vh);
+  padding: 0% calc(0px + 20%);
+  font-size: calc(9px + 0.7vw);
+  color: white;
+  text-decoration: none;
+}
+
+.navbar_items:hover {
+  background-color: rgb(223, 57, 107);
+  font-style: italic;
+}
+
+.welcome {
+  height: 88%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+.wel_txt {
+  font-family: "Playball", cursive;
+  font-size: calc(25px + 3vh);
+  font-weight: 1000;
+  text-align: center;
+  background: linear-gradient(320deg, red, rgba(0, 4, 255, 0.973));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 17.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(60, end) 2;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.nav {
+  color: black;
+  cursor: pointer;
+  list-style-type: none;
+  text-decoration: none;
+  /* border: 2px solid red; */
+}
+
+.content {
+  width: 30vw;
+  padding: 4%;
+  margin: 3vh auto;
+  text-align: center;
+  border-radius: 10%;
+  font-size: calc(10px + 2vh);
+  border: 2px solid black;
+  font-family: "Copse", serif;
+  background: linear-gradient(150deg, white, rgb(250, 83, 133));
+}
+
+b:hover {
+  font-style: italic;
+}
+
+.center {
+  font-family: "Copse", serif;
+  width: 68.8vw;
+  padding: 10vh 15vw;
+  background: url(./img/edu.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* border: 2px solid black; */
+}
+
+.center::after {
+  content: "";
+  background: linear-gradient(150deg, rgb(223, 57, 107), white);
+  background-size: cover;
+  top: 100vh;
+  height: 100vh;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  /* border: 2px solid green; */
+}
+
+.title {
+  text-align: center;
+  font-weight: 600;
+  font-size: calc(10px + 3vh);
+}
+
+.parts {
+  margin: 5vh 15vw;
+  /* background-color: white; */
+  /* border: 2px solid red; */
+}
+
+.part {
+  margin: 4vh 5vw;
+  padding: 2vh;
+  font-size: calc(7px + 1.5vh);
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 0px 10px 2px #d4d4d4;
+  border-radius: 3%;
+  /* border: 2px solid black; */
+}
+
+.year {
+  /* border: 2px solid black; */
+  box-shadow: 0 0 10px 3px;
+  border-radius: 50%;
+  background-color: rgb(223, 57, 107);
+  color: white;
+  width: 70px;
+  height: 45px;
+  margin: 1vh auto;
+  font: bold 15px/13px Helvetica;
+  padding: 30px 3px 0 3px;
+  text-align: center;
+}
+
+#p1:hover .year {
+  color: white;
+  background-color: black;
+}
+
+#p1:hover {
+  /* font-size: calc(7px + 1.7vh); */
+  padding: 3.5vh;
+  color: white;
+  background-color: rgb(223, 57, 107);
+}
+
+#p2:hover .year {
+  color: white;
+  background-color: black;
+}
+
+#p2:hover {
+  padding: 3.5vh;
+  color: white;
+  background-color: rgb(223, 57, 107);
+}
+
+#p3:hover .year {
+  color: white;
+  background-color: black;
+}
+
+#p3:hover {
+  padding: 3.5vh;
+  color: white;
+  background-color: rgb(223, 57, 107);
+}
+
+.footer {
+  font-family: "Copse", serif;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: black;
+}
+
+.links {
+  text-align: center;
+  padding: 4vh 10vw;
+  /* border: 2px solid green; */
+}
+
+.f_links {
+  font-size: 4vh;
+  color: white;
+  padding: 1vw;
+}
+
+p {
+  font-size: calc(6px + 1.5vh);
+  color: white;
+}
+
+.acp_header {
+  height: 15vh;
+  width: 91vw;
+  padding: 2vh 6vw 2vh 2vw;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background: linear-gradient(150deg, rgb(223, 57, 107), white);
+  /* border: 2px solid red; */
+}
+
+.acp_header_link {
+  padding: 3vh;
+  font-weight: 600;
+  justify-self: center;
+  align-items: flex-end;
+  font-size: calc(8px + 1.5vh);
+  /* border: 2px solid red; */
+}
+
+.acp_header_items {
+  color: black;
+  padding: 0px 1vw;
+  text-decoration: none;
+}
+
+.form {
+  padding: 3vh 2vw;
+  margin: 5vh 20vw;
+  border-radius: 5vh;
+  border: 4px solid black;
+}
+
+form {
+  /* line-height: 2vh; */
+  /* padding: 0px 2vw; */
+  width: 50vw;
+  margin: auto;
+  /* border: 2px solid black; */
+}
+
+.form-group {
+  margin: 1vh;
+  /* border: 2px solid red; */
+}
+
+label {
+  font-weight: 600;
+  font-size: calc(10px + 1.5vh);
+}
+
+input {
+  width: 100%;
+  font-size: calc(8px + 1vh);
+  margin: 1vh 0px;
+}
+
+.btn {
+  border-radius: 1vh;
+  padding: 1vh;
+  width: 5vw;
+  color: white;
+  margin: 0px 45%;
+  font-size: calc(8px + 1vh);
+  background-color: rgb(223, 57, 107);
+}
+
+.abt_content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 5vh 10vw;
+  /* border: 2px solid red; */
+}
+
+.left_txt {
+  font-family: "Copse", serif;
+  padding: 3vh 2vw;
+  font-size: calc(10px + 1vh);
+  /* border: 2px solid red; */
+}
+
+.right_skills {
+  padding: 3vh 2vw;
+  /* border: 2px solid red; */
+}
+
+.skill_name {
+  padding: 0px;
+  margin: 1vh 0px 0px 0px;
+  color: black;
+}
+
+.skill_per {
+  text-align: right;
+  /* padding: -2px; */
+  /* margin: 1vh 0px 0px 0px; */
+  color: black;
+}
+
+.container {
+  width: 100%; /* Full width */
+  height: 1.5vh;
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+  color: white;
+  height: 1.5vh;
+  font-size: calc(10px + 0.1vh);
+  background-color: rgb(223, 57, 107);
+}
+
+.html {
+  width: 90%;
+  animation: s_html 5s linear 2s 1 normal;
+}
+.css {
+  width: 80%;
+  animation: s_css 5s linear 2s 1 normal;
+}
+.js {
+  width: 65%;
+  animation: s_js 5s linear 2s 1 normal;
+}
+.rjs {
+  width: 70%;
+  animation: s_rjs 5s linear 2s 1 normal;
+}
+.rn {
+  width: 65%;
+  animation: s_rn 5s linear 2s 1 normal;
+}
+.wp {
+  width: 75%;
+  animation: s_wp 5s linear 2s 1 normal;
+}
+.sql {
+  width: 65%;
+  animation: s_sql 5s linear 2s 1 normal;
+}
+.fb {
+  width: 65%;
+  animation: s_fb 5s linear 2s 1 normal;
+}
+.cpp {
+  width: 90%;
+  animation: s_cpp 5s linear 2s 1 normal;
+}
+.python {
+  width: 65%;
+  animation: s_p 5s linear 2s 1 normal;
+}
+
+@keyframes s_html {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes s_css {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes s_js {
+  from {
+    width: 0;
+  }
+  to {
+    width: 65%;
+  }
+}
+
+@keyframes s_rjs {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes s_rn {
+  from {
+    width: 0;
+  }
+  to {
+    width: 65%;
+  }
+}
+
+@keyframes s_wp {
+  from {
+    width: 0;
+  }
+  to {
+    width: 75%;
+  }
+}
+
+@keyframes s_sql {
+  from {
+    width: 0;
+  }
+  to {
+    width: 65%;
+  }
+}
+
+@keyframes s_fb {
+  from {
+    width: 0;
+  }
+  to {
+    width: 65%;
+  }
+}
+
+@keyframes s_cpp {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes s_p {
+  from {
+    width: 0;
+  }
+  to {
+    width: 65%;
+  }
+}
+
+.write_head {
+  background: linear-gradient(to right, red , rgba(0, 4, 255, 0.973));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: "Playball", cursive;
+  font-size: calc(18px + 3vh);
+}
+
+.writeups {
+  margin: 3vh 5vw;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* border: 2px solid red; */
+}
+
+.read {
+  margin: 5vh 2vw;
+  height: 22vw;
+  position: relative;
+  box-shadow: 0px 0px 10px 2px #d4d4d4;
+  /* border: 2px solid blue; */
+}
+
+.read_img {
+  width: 70%;
+  height: 80%;
+  margin: 0% 15%;
+  padding: 4%;
+  z-index: 5;
+  /* opacity: ; */
+  position: absolute;
+  /* border: 2px solid red; */
+}
+
+.read_txt {
+  width: 70%;
+  height: 80%;
+  margin: 0% 15%;
+  padding: 1%;
+  /* z-index: 5; */
+  text-align: center;
+  /* z-index: -10; */
+  opacity: 0;
+  position: relative;
+  font-family: "Playball", cursive;
+  font-size: calc(12px + 1vh);
+  /* border: 2px solid black; */
+}
+
+.read_img:hover {
+  /* z-index: 10; */
+  opacity: 0;
+}
+
+.read_img:hover + .read_txt {
+  /* z-index: 10; */
+  opacity: 1;
+}
